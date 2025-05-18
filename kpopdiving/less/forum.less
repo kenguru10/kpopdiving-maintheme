@@ -1,0 +1,46 @@
+// 導入變量文件
+@import "variables.less";
+
+// 導入 Flarum 核心樣式 (可選，有時有助於理解結構)
+// @import "~flarum/core/less/forum.less";
+
+// 添加你自己的自定義樣式
+body {
+    font-size: 15px; // 修改全局字體大小
+}
+
+.App-header {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); // 給導航欄添加陰影
+}
+
+.DiscussionListItem {
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 15px;
+    background: @control-bg; // 使用在 variables.less 中定義的變量
+}
+
+// 使用瀏覽器開發者工具檢查 Flarum 元素的類名和結構
+// 比如修改按鈕樣式
+.Button {
+    border-radius: 20px; // 更圓角的按鈕
+}
+
+.Button--primary {
+    background-color: @primary-color;
+    border-color: @primary-color;
+    color: white;
+
+    &:hover {
+        background-color: darken(@primary-color, 10%);
+    }
+}
+
+// 響應式設計調整
+@media @tablet-up {
+    .App-content {
+        padding-top: @content-padding + 10px; // 增加頂部填充
+    }
+}
+
+// ... 更多自定義規則

@@ -1,0 +1,25 @@
+{
+    "name": "kpopdiving/flarum-maintheme",
+    "description": "Kpopdiving Main Theme",
+    "type": "flarum-extension",
+    "license": "MIT",      
+    "require": {
+        "flarum/core": "^1.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kpopdiving\\Maintheme\\": "src/"
+        }
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "Kpopdiving Theme",
+            "category": "appearance", 
+            "icon": {
+                "name": "fas fa-smile",
+                "color": "#333",
+                "backgroundColor": "#ccc"
+            }
+        }
+    }
+}
